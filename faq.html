@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Esercizio finale Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel=stylesheet>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+
+        <!-- contiene gli elementi che devono essere visibili anche quando la barra è minimizzata -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Start Booststrap</a>
+        </div>
+
+        <!-- Elementi della barra -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- MENU A DISCESA -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Portfolio <b class="caret"></b>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sub-Link 1</a></li>
+                            <li><a href="#">Sub-Link 2</a></li>
+                            <li><a href="#">Sub-Link 3</a></li>
+                            <li><a href="#">Sub-Link 4</a></li>
+                            <li><a href="#">Sub-Link 5</a></li>
+                        </ul>
+                </li>
+                <!-- MENU A DISCESA -->
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Blog <b class="caret"></b>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">Blog</a></li>
+                            <li><a href="#">Sub-Link 2</a></li>
+                            <li><a href="#">Sub-Link 3</a></li>
+                            <li><a href="#">Sub-Link 4</a></li>
+                            <li><a href="#">Sub-Link 5</a></li>
+                        </ul>
+                </li>
+                <!-- MENU A DISCESA -->
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Other Pages <b class="caret"></b>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Sub-Link 3</a></li>
+                            <li><a href="#">Sub-Link 4</a></li>
+                            <li><a href="#">Sub-Link 5</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Index</a></li>
+                            <li >Other Page
+                                <li class="active"> FAQ </li>
+                            </li>
+
+                        </ol>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2> FAQ <small> Subheading
+                    </small></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    FAQ #1
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    FAQ #2
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    FAQ #3
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+        </div>
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- JAVASCRIPT -->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
